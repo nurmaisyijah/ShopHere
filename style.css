@@ -1,0 +1,1227 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body {
+ 
+    font-family: "Poppins",sans-serif;
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.navbar-logo {
+  max-width: 110px;
+  height: auto;
+}
+
+@media (max-width: 768px) {  /* Untuk tablet dan mobile */
+  .navbar-logo {
+    max-width: 100px;  /* Ukuran lebih kecil pada layar kecil */
+  }
+}
+
+@media (max-width: 576px) {  /* Untuk layar ponsel kecil */
+  .navbar-logo {
+    max-width: 80px;
+  }
+}
+/* Latar belakang transparan awal */
+.navbar-scroll {
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out;
+    /*color: black;*/
+}
+.navbar-scroll .nav-link, .navbar-scroll .navbar-brand {
+    color: white;
+    transition: color 0.4s ease-in-out;
+}
+.nav-link.active {
+    color: white ; /* Warna ketika aktif */
+    border-bottom: 2px solid white ; /* Menambahkan garis di bawah */
+}
+/* Ubah ke latar belakang setelah gulir */
+.navbar-scroll.scrolled {
+    background-color: #5A9BD4; 
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    
+}
+.navbar-scroll.scrolled .nav-link, .navbar-scroll.scrolled .navbar-brand {
+    color:white ; 
+}
+ /* Remove blue focus outline */
+  .nav-link.dropdown-toggle:focus, 
+  .nav-link.dropdown-toggle:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  /* Optional: If you want to remove hover background color change */
+  .dropdown-item:hover {
+    background-color: transparent !important;
+  }
+
+  .home{
+      background: url(img/bghome.jpg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: repeat;
+  
+  }
+ 
+  /* General styling */
+.home .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+/* Responsive adjustments for tablet screens */
+@media (max-width: 1024px) {
+  .home .main {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .home .main div:first-child,
+  .home .main .swiper {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .home .main div:first-child h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  .home .main {
+    padding: 1rem;
+  }
+
+  .home .main div:first-child h1 {
+    font-size: 2rem;
+  }
+
+  .home .main p {
+    font-size: 1.5rem;
+  }
+
+ 
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .home .main {
+    padding: 0.5rem;
+  }
+
+  .home .main div:first-child h1 {
+    font-size: 1.8rem;
+  }
+
+}
+
+  .main {
+      
+    position: relative;
+    width: calc(min(90rem, 90%));
+    margin: 0 auto;
+    min-height: 100vh;
+    column-gap: 3rem;
+    /* padding-block: min(20vh, 3rem); */
+  }
+  
+  .main > div span {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .main > div h1 {
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
+    background-color: #005baa;
+    background-image: linear-gradient(45deg, #005baa, #000000);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  .main > div h1 strong {
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
+    background-color: white;
+    color: black;
+    /* background-image: linear-gradient(45deg, #005baa, #000000); */
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  
+  .main > div hr {
+    display: block;
+    background: #005baa;
+    height: 0.25rem;
+    width: 6.25rem;
+    border: none;
+    margin: 1.125rem 0 1.875rem 0;
+  }
+  
+  .main > div p {
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .main a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5rem;
+    background:transparent ;
+    border-radius: 3.125rem;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .main > div > a {
+    border: 2px solid white;
+    margin-top: 2.188rem;
+    padding: 0.625rem 1.875rem;
+  }
+  
+  .main > div > a:hover {
+    border: 0.125rem solid #005baa;
+    color: #005baa;
+  }
+  
+  .swiper {
+      width: 100%;
+      height: 300px; /* Sesuaikan dengan kebutuhan */
+    }
+   
+    
+  
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+  
+  .swiper-pagination {
+    bottom: 1.25rem !important;
+  }
+  
+  .swiper-slide {
+    width: 18.75rem;
+    height: 28.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: self-start;
+  }
+  
+  .swiper-slide h2 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 0.625rem;
+    padding: 0 0 0 1.563rem;
+    text-transform: uppercase;
+  }
+  
+  .swiper-slide p {
+    color: #dadada;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    padding: 0 1.563rem;
+    line-height: 1.6;
+    font-size: 1.3rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .swiper-slide a {
+    margin: 1.25rem 1.563rem 3.438rem 1.563rem;
+    padding: 0.438em 1.875rem;
+    font-size: 0.9rem;
+  }
+  
+  .swiper-slide a:hover {
+    color: #005baa;
+  }
+  
+  .swiper-slide div {
+    display: none;
+    opacity: 0;
+    padding-bottom: 0.625rem;
+  }
+  
+  
+  .swiper-slide-active div {
+    display: block;
+    opacity: 1;
+  }
+  
+  .swiper-slide--one {
+    
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+      url("img/maskara-removebg-preview.png")
+        no-repeat 50% 50% / cover;
+        border: 5px solid white;
+        border-radius: 5px;
+  }
+  
+  .swiper-slide--two {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("img/perfum-removebg-preview.png")
+      no-repeat 50% 50% / cover;
+      border: 5px solid white;
+      border-radius: 5px;
+  }
+  
+  .swiper-slide--three {
+    background: linear-gradient(to top, #0f2027, #203a4300, #4292b500),
+      url("img/sofa-removebg-preview.png")
+        no-repeat 50% 50% / cover;
+        border: 5px solid white;
+        border-radius: 5px;
+  }
+  
+  .swiper-slide--four {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+      url("img/apel-removebg-preview.png")
+        no-repeat 50% 50% / cover;
+        border: 5px solid white;
+        border-radius: 5px;
+  }
+  
+  .swiper-slide--five {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+      url("img/sapi-removebg-preview.png")
+        no-repeat 50% 50% / cover;
+        border: 5px solid white;
+        border-radius: 5px;
+  }
+  
+  .swiper-3d .swiper-slide-shadow-left,
+  .swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+  }
+  
+  @media screen and (min-width: 48rem) {
+    .main {
+      display: flex;
+      align-items: center;
+    }
+    .bg,
+    .bg2 {
+      opacity: 0.1;
+    }
+  }
+  
+  @media screen and (min-width: 93.75rem) {
+    .swiper {
+      width: 85%;
+    }
+  }
+  
+.about-section{
+  background: #5a9bd4;
+}
+.square1{
+  background: url(img/apel-removebg-preview-removebg-preview.png);
+  border: 5px solid white;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+.square2{
+  background: url(img/sapi-removebg-preview__1_-removebg-preview.png);
+  border: 5px solid white;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+.square3{
+  background: url(img/maskara-removebg-preview-removebg-preview-removebg-preview.png);
+  border: 5px solid white;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+.square4{
+  background: url(img/perfum-removebg-preview\ \(2\).png);
+  border: 5px solid white;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+
+}
+.product-section{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 2000 1400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%222000%22 height=%221400%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3C%2Fmask%3E%3Cpath fill=%22%23f1f2f6%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cg mask=%22url(%23b)%22%3E%3Cg style=%22transform-origin:center center%22 fill=%22%23a6d0e7%22%3E%3Ccircle cx=%22586.5%22 cy=%2234.5%22 r=%224%22%2F%3E%3Ccircle cx=%22655.5%22 cy=%2234.5%22 r=%224%22%2F%3E%3Ccircle cx=%221345.5%22 cy=%2234.5%22 r=%224%22%2F%3E%3Ccircle cx=%221552.5%22 cy=%2234.5%22 r=%224%22%2F%3E%3Ccircle cx=%221621.5%22 cy=%2234.5%22 r=%224%22%2F%3E%3Ccircle cx=%221966.5%22 cy=%2234.5%22 r=%224%22%2F%3E%3Ccircle cx=%222035.5%22 cy=%2234.5%22 r=%224%22%2F%3E%3Ccircle cx=%22241.5%22 cy=%22103.5%22 r=%224%22%2F%3E%3Ccircle cx=%22448.5%22 cy=%22103.5%22 r=%224%22%2F%3E%3Ccircle cx=%221414.5%22 cy=%22103.5%22 r=%224%22%2F%3E%3Ccircle cx=%22724.5%22 cy=%22172.5%22 r=%224%22%2F%3E%3Ccircle cx=%22793.5%22 cy=%22172.5%22 r=%224%22%2F%3E%3Ccircle cx=%22862.5%22 cy=%22172.5%22 r=%224%22%2F%3E%3Ccircle cx=%221276.5%22 cy=%22172.5%22 r=%224%22%2F%3E%3Ccircle cx=%221966.5%22 cy=%22172.5%22 r=%224%22%2F%3E%3Ccircle cx=%22655.5%22 cy=%22241.5%22 r=%224%22%2F%3E%3Ccircle cx=%22793.5%22 cy=%22241.5%22 r=%224%22%2F%3E%3Ccircle cx=%221000.5%22 cy=%22241.5%22 r=%224%22%2F%3E%3Ccircle cx=%221276.5%22 cy=%22241.5%22 r=%224%22%2F%3E%3Ccircle cx=%221345.5%22 cy=%22241.5%22 r=%224%22%2F%3E%3Ccircle cx=%22310.5%22 cy=%22310.5%22 r=%224%22%2F%3E%3Ccircle cx=%22931.5%22 cy=%22310.5%22 r=%224%22%2F%3E%3Ccircle cx=%221483.5%22 cy=%22310.5%22 r=%224%22%2F%3E%3Ccircle cx=%221759.5%22 cy=%22310.5%22 r=%224%22%2F%3E%3Ccircle cx=%22517.5%22 cy=%22379.5%22 r=%224%22%2F%3E%3Ccircle cx=%22655.5%22 cy=%22379.5%22 r=%224%22%2F%3E%3Ccircle cx=%221828.5%22 cy=%22379.5%22 r=%224%22%2F%3E%3Ccircle cx=%22310.5%22 cy=%22448.5%22 r=%224%22%2F%3E%3Ccircle cx=%22448.5%22 cy=%22448.5%22 r=%224%22%2F%3E%3Ccircle cx=%221552.5%22 cy=%22448.5%22 r=%224%22%2F%3E%3Ccircle cx=%22172.5%22 cy=%22517.5%22 r=%224%22%2F%3E%3Ccircle cx=%22655.5%22 cy=%22517.5%22 r=%224%22%2F%3E%3Ccircle cx=%221897.5%22 cy=%22517.5%22 r=%224%22%2F%3E%3Ccircle cx=%22103.5%22 cy=%22586.5%22 r=%224%22%2F%3E%3Ccircle cx=%22586.5%22 cy=%22586.5%22 r=%224%22%2F%3E%3Ccircle cx=%22862.5%22 cy=%22586.5%22 r=%224%22%2F%3E%3Ccircle cx=%221966.5%22 cy=%22586.5%22 r=%224%22%2F%3E%3Ccircle cx=%22862.5%22 cy=%22655.5%22 r=%224%22%2F%3E%3Ccircle cx=%221345.5%22 cy=%22655.5%22 r=%224%22%2F%3E%3Ccircle cx=%221621.5%22 cy=%22655.5%22 r=%224%22%2F%3E%3Ccircle cx=%221690.5%22 cy=%22655.5%22 r=%224%22%2F%3E%3Ccircle cx=%221483.5%22 cy=%22724.5%22 r=%224%22%2F%3E%3Ccircle cx=%221897.5%22 cy=%22724.5%22 r=%224%22%2F%3E%3Ccircle cx=%22241.5%22 cy=%22793.5%22 r=%224%22%2F%3E%3Ccircle cx=%22310.5%22 cy=%22793.5%22 r=%224%22%2F%3E%3Ccircle cx=%221207.5%22 cy=%22793.5%22 r=%224%22%2F%3E%3Ccircle cx=%221897.5%22 cy=%22793.5%22 r=%224%22%2F%3E%3Ccircle cx=%2234.5%22 cy=%22862.5%22 r=%224%22%2F%3E%3Ccircle cx=%22586.5%22 cy=%22862.5%22 r=%224%22%2F%3E%3Ccircle cx=%22862.5%22 cy=%22862.5%22 r=%224%22%2F%3E%3Ccircle cx=%221069.5%22 cy=%22862.5%22 r=%224%22%2F%3E%3Ccircle cx=%221138.5%22 cy=%22862.5%22 r=%224%22%2F%3E%3Ccircle cx=%221207.5%22 cy=%22931.5%22 r=%224%22%2F%3E%3Ccircle cx=%221345.5%22 cy=%22931.5%22 r=%224%22%2F%3E%3Ccircle cx=%221690.5%22 cy=%22931.5%22 r=%224%22%2F%3E%3Ccircle cx=%221897.5%22 cy=%22931.5%22 r=%224%22%2F%3E%3Ccircle cx=%22103.5%22 cy=%221000.5%22 r=%224%22%2F%3E%3Ccircle cx=%22310.5%22 cy=%221000.5%22 r=%224%22%2F%3E%3Ccircle cx=%221276.5%22 cy=%221000.5%22 r=%224%22%2F%3E%3Ccircle cx=%221414.5%22 cy=%221000.5%22 r=%224%22%2F%3E%3Ccircle cx=%221759.5%22 cy=%221000.5%22 r=%224%22%2F%3E%3Ccircle cx=%221207.5%22 cy=%221069.5%22 r=%224%22%2F%3E%3Ccircle cx=%22655.5%22 cy=%221138.5%22 r=%224%22%2F%3E%3Ccircle cx=%22862.5%22 cy=%221138.5%22 r=%224%22%2F%3E%3Ccircle cx=%22931.5%22 cy=%221138.5%22 r=%224%22%2F%3E%3Ccircle cx=%221414.5%22 cy=%221138.5%22 r=%224%22%2F%3E%3Ccircle cx=%22517.5%22 cy=%221207.5%22 r=%224%22%2F%3E%3Ccircle cx=%221897.5%22 cy=%221276.5%22 r=%224%22%2F%3E%3Ccircle cx=%221966.5%22 cy=%221276.5%22 r=%224%22%2F%3E%3Ccircle cx=%22655.5%22 cy=%221345.5%22 r=%224%22%2F%3E%3Ccircle cx=%221897.5%22 cy=%221345.5%22 r=%224%22%2F%3E%3Ccircle cx=%22172.5%22 cy=%221414.5%22 r=%224%22%2F%3E%3Ccircle cx=%221483.5%22 cy=%221414.5%22 r=%224%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%220%22 stop-color=%22%23fff%22%2F%3E%3Cstop offset=%221%22 stop-color=%22%23fff%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
+
+}
+.nav-tabs .nav-link {
+  position: relative;
+  padding-bottom: 10px; /* Jarak antara teks/tab dengan garis */
+}
+
+.nav-tabs .nav-link.active {
+  color: #5a9bd4; /* Warna teks tab aktif */
+  font-weight: bold; /* Ketebalan font pada tab aktif */
+}
+
+.nav-tabs .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #5a9bd4; /* Warna garis bawah tab aktif */
+}
+
+/* Tab button styling */
+.nav-pills .nav-item .nav-link {
+  background-color: transparent;
+  border: none;
+  margin-left: 20px;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-text i {
+  font-size: 4.5rem;
+  color: #5A9BD4;
+  margin-bottom: 0.5rem; /* Spasi antara ikon dan teks */
+}
+
+.icon-text span {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* card product */
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+/* .card:hover{
+  border: 7px solid  white;
+} */
+.card img.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  text-align: center;
+}
+
+.row .col-md-2 {
+  max-width: 20%;
+}
+
+
+.buy-now-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6); /* Warna overlay */
+  color: #fff;
+  /* border: 7px solid  white; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.buy-now-overlay span {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.buy-now-overlay span:hover{
+  border: 2px solid white;
+  background-color:rgba(90, 155, 212, 0.5);
+  border-radius: 5px;
+  padding: 5px; 
+}
+
+.product-card:hover .buy-now-overlay {
+  opacity: 1; /* Tampilkan overlay saat hover */
+}
+
+
+/* Modal Styling */
+.modal-content {
+  display: flex;
+  padding: 20px;
+  color: #5A9BD4;
+  border-top: 7px solid #5A9BD4;
+  border-bottom: 7px solid #5A9BD4;
+  border-radius: 12px;
+  background-color: white;
+  outline: none;
+  max-width: 500px; /* Further reduced width for desktop */
+  margin: auto; /* Centers the modal horizontally */
+}
+
+.modal-header {
+  background-color: #5a9bd4;
+}
+
+.modal-title {
+  font-size: 1.8rem; /* Adjusted title size for compact modal */
+  font-weight: bold;
+  color: #fff;
+}
+
+.img-fluid {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info p {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem; /* Adjusted for compact size */
+}
+
+.modal-footer .btn {
+  font-size: 1.5rem;
+  background-color: #5A9BD4;
+  color: white;
+  border-radius: 5px;
+}
+
+.modal-footer .btn:hover {
+  background-color: white;
+  color: #5A9BD4;
+  border: 1px solid #5A9BD4;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+}
+
+.modal-body img {
+  max-width: 40%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.modal-body .product-description {
+  max-width: 60%;
+}
+
+/* Responsive Design: Stacks image and text vertically on smaller screens */
+@media (max-width: 576px) {
+  .modal-body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .modal-body img {
+    max-width: 100%;
+    margin: 0 0 20px; /* Adds margin below image */
+  }
+
+  .modal-body .product-description {
+    max-width: 100%;
+  }
+
+  .modal-footer .btn {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+ 
+}
+
+/* Hide the Close button in the header */
+.modal-header .btn-close {
+  display: none;
+}
+
+/* Removes border in modal footer */
+.modal-footer {
+  border-top: none;
+}
+
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 70%; /* Smaller width for a compact design */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 1200px) {
+  .card-container {
+      grid-template-columns: repeat(4, 1fr); /* 4 cards per row on large screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .card-container {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .card-container {
+      grid-template-columns: 1fr; /* 1 card per row on extra small screens */
+  }
+}
+
+a {
+  text-decoration: none; /* Menghilangkan garis bawah pada semua link */
+}
+
+.persona-link {
+  text-decoration: none; /* Menghilangkan garis bawah pada link dengan kelas persona-link */
+}
+
+
+.mySwiper {
+  width: 100%;
+  height: auto;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* Warna latar belakang putih untuk slide */
+  border-radius: 15px; /* Sudut melengkung */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan */
+  padding: 20px; /* Padding untuk konten */
+  transition: transform 0.3s; /* Transisi saat hover */
+}
+
+.slide-content:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.slide-image {
+  width: 100%; /* Memastikan gambar responsif */
+  border-radius: 10px; /* Sudut melengkung gambar */
+}
+
+.slide-title {
+  font-size: 1.5rem; /* Ukuran font untuk judul */
+  margin: 10px 0; /* Jarak atas dan bawah judul */
+  color: #333; /* Warna teks judul */
+}
+
+.slide-description {
+  font-size: 1rem; /* Ukuran font untuk deskripsi */
+  color: #666; /* Warna teks deskripsi */
+  text-align: center; /* Rata tengah */
+  margin-bottom: 15px; /* Jarak bawah deskripsi */
+}
+
+.slide-button {
+  background-color: #4682B4; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border: none; /* Menghilangkan border default */
+  border-radius: 5px; /* Sudut melengkung tombol */
+  padding: 10px 15px; /* Padding untuk tombol */
+  cursor: pointer; /* Mengubah kursor saat hover */
+  transition: background-color 0.3s; /* Transisi saat hover */
+}
+
+.slide-button:hover {
+  background-color: #5a9bd4; /* Warna tombol saat hover */
+}
+
+
+.cardd {
+  background: #5A9BD4;
+  display: grid;
+  grid-template-rows: auto 500px 50px; /* Tambahkan baris ketiga untuk radio buttons */
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;
+  position: relative; /* This makes .carousel-arrows positioned relative to .cardd */
+  padding-top: 20px; /* Beri ruang untuk judul di bagian atas */
+}
+
+.section-title {
+  grid-row: 1 / 2; /* Posisikan judul di baris pertama */
+  grid-column: 1 / -1; /* Posisikan judul di sepanjang kolom */
+  margin: 20px; 
+  font-size: 2.5rem;
+  color: #FFF;
+}
+
+#carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#carousel {
+  grid-row: 2 / 3; /* Atur carousel di baris kedua */
+  grid-column: 1 / 8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --items: 5;
+  --middle: 3;
+  --position: 1;
+  pointer-events: none;
+  margin-bottom: 0;
+}
+
+
+
+div.item {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  background-color: coral;
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-10deg * var(--r)))
+    translateX(calc(-300px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+  
+}
+
+div.item:nth-of-type(1) {
+  --offset: 1;
+  border-bottom:5px solid#4682B4;
+  border-top: 5px solid #4682B4;
+  background-color: white;
+}
+div.item:nth-of-type(2) {
+  --offset: 2;
+  border-bottom:5px solid#4682B4;
+  border-top: 5px solid #4682B4;
+  background-color: white;
+}
+div.item:nth-of-type(3) {
+  --offset: 3;
+  border-bottom:5px solid#4682B4;
+  border-top: 5px solid #4682B4;
+  background-color: white;
+}
+div.item:nth-of-type(4) {
+  --offset: 4;
+  border-bottom:5px solid#4682B4;
+  border-top: 5px solid #4682B4;
+  background-color: white;
+}
+div.item:nth-of-type(5) {
+  --offset: 5;
+  border-bottom:5px solid#4682B4;
+  border-top: 5px solid #4682B4;
+  background-color: white;
+}
+
+
+input[type="radio"] {
+  appearance: none; /* Menghilangkan gaya default */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white; /* Warna saat belum diklik */
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: #4682B4; /* Warna saat diklik */
+}
+
+input:nth-of-type(1) {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+input:nth-of-type(1):checked ~ div#carousel {
+  --position: 1;
+}
+
+input:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+input:nth-of-type(2):checked ~ div#carousel {
+  --position: 2;
+}
+
+input:nth-of-type(3) {
+  grid-column: 4 /5;
+  grid-row: 3 / 4;
+}
+input:nth-of-type(3):checked ~ div#carousel {
+  --position: 3;
+}
+
+input:nth-of-type(4) {
+  grid-column: 5 / 6;
+  grid-row: 3 / 4;
+}
+input:nth-of-type(4):checked ~ div#carousel {
+  --position: 4;
+}
+
+input:nth-of-type(5) {
+  grid-column: 6 / 7;
+  grid-row: 3 / 4;
+}
+input:nth-of-type(5):checked ~ div#carousel {
+  --position: 5;
+}
+
+
+
+
+
+.item {
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  /* background-color: coral; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-10deg * var(--r)))
+      translateX(calc(-300px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+}
+
+.customer-photo {
+  width: 70px; /* Smaller photo size */
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px; /* Space below image */
+}
+
+
+.testimonial-text {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.customer-name {
+  font-style: italic;
+  color: #777;
+}
+/* Ensure .carousel-arrows is positioned relative to the carousel */
+
+
+/* Position arrow buttons on the left and right sides of the carousel */
+.carousel-arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: auto; /* Ensures the buttons are clickable */
+  z-index: 1; /* Bring the arrows to the front */
+  padding: 0 20px; /* Add some padding to ensure buttons don’t stick to the edges */
+}
+
+.arrow-btn {
+  background-color: #4682B4;
+  color: #FFF;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.arrow-btn:hover {
+  background-color: #5a9bd4;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .arrow-btn {
+      font-size: 20px; /* Smaller size for tablets */
+      color: #000;
+  }
+}
+
+/* Media Query for Mobile */
+@media (max-width: 480px) {
+  .arrow-btn {
+      font-size: 16px; /* Even smaller size for mobile */
+      color: #000;
+  }
+}
+
+
+.faq {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 2000 1400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%222000%22 height=%221400%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3C%2Fmask%3E%3Cpath fill=%22%23f1f2f6%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cg mask=%22url(%23b)%22%3E%3Cg style=%22transform-origin:center center%22 fill=%22%23a6d0e7%22%3E%3Ccircle cx=%22586.5%22 cy=%2234.5%22 r=%224%22%2F%3E%3Ccircle cx=%22655.5%22 cy=%2234.5%22 r=%224%22%2F%3E%3Ccircle cx=%221345.5%22 cy=%2234.5%22 r=%224%22%2F%3E%3Ccircle cx=%221552.5%22 cy=%2234.5%22 r=%224%22%2F%3E%3Ccircle cx=%221621.5%22 cy=%2234.5%22 r=%224%22%2F%3E%3Ccircle cx=%221966.5%22 cy=%2234.5%22 r=%224%22%2F%3E%3Ccircle cx=%222035.5%22 cy=%2234.5%22 r=%224%22%2F%3E%3Ccircle cx=%22241.5%22 cy=%22103.5%22 r=%224%22%2F%3E%3Ccircle cx=%22448.5%22 cy=%22103.5%22 r=%224%22%2F%3E%3Ccircle cx=%221414.5%22 cy=%22103.5%22 r=%224%22%2F%3E%3Ccircle cx=%22724.5%22 cy=%22172.5%22 r=%224%22%2F%3E%3Ccircle cx=%22793.5%22 cy=%22172.5%22 r=%224%22%2F%3E%3Ccircle cx=%22862.5%22 cy=%22172.5%22 r=%224%22%2F%3E%3Ccircle cx=%221276.5%22 cy=%22172.5%22 r=%224%22%2F%3E%3Ccircle cx=%221966.5%22 cy=%22172.5%22 r=%224%22%2F%3E%3Ccircle cx=%22655.5%22 cy=%22241.5%22 r=%224%22%2F%3E%3Ccircle cx=%22793.5%22 cy=%22241.5%22 r=%224%22%2F%3E%3Ccircle cx=%221000.5%22 cy=%22241.5%22 r=%224%22%2F%3E%3Ccircle cx=%221276.5%22 cy=%22241.5%22 r=%224%22%2F%3E%3Ccircle cx=%221345.5%22 cy=%22241.5%22 r=%224%22%2F%3E%3Ccircle cx=%22310.5%22 cy=%22310.5%22 r=%224%22%2F%3E%3Ccircle cx=%22931.5%22 cy=%22310.5%22 r=%224%22%2F%3E%3Ccircle cx=%221483.5%22 cy=%22310.5%22 r=%224%22%2F%3E%3Ccircle cx=%221759.5%22 cy=%22310.5%22 r=%224%22%2F%3E%3Ccircle cx=%22517.5%22 cy=%22379.5%22 r=%224%22%2F%3E%3Ccircle cx=%22655.5%22 cy=%22379.5%22 r=%224%22%2F%3E%3Ccircle cx=%221828.5%22 cy=%22379.5%22 r=%224%22%2F%3E%3Ccircle cx=%22310.5%22 cy=%22448.5%22 r=%224%22%2F%3E%3Ccircle cx=%22448.5%22 cy=%22448.5%22 r=%224%22%2F%3E%3Ccircle cx=%221552.5%22 cy=%22448.5%22 r=%224%22%2F%3E%3Ccircle cx=%22172.5%22 cy=%22517.5%22 r=%224%22%2F%3E%3Ccircle cx=%22655.5%22 cy=%22517.5%22 r=%224%22%2F%3E%3Ccircle cx=%221897.5%22 cy=%22517.5%22 r=%224%22%2F%3E%3Ccircle cx=%22103.5%22 cy=%22586.5%22 r=%224%22%2F%3E%3Ccircle cx=%22586.5%22 cy=%22586.5%22 r=%224%22%2F%3E%3Ccircle cx=%22862.5%22 cy=%22586.5%22 r=%224%22%2F%3E%3Ccircle cx=%221966.5%22 cy=%22586.5%22 r=%224%22%2F%3E%3Ccircle cx=%22862.5%22 cy=%22655.5%22 r=%224%22%2F%3E%3Ccircle cx=%221345.5%22 cy=%22655.5%22 r=%224%22%2F%3E%3Ccircle cx=%221621.5%22 cy=%22655.5%22 r=%224%22%2F%3E%3Ccircle cx=%221690.5%22 cy=%22655.5%22 r=%224%22%2F%3E%3Ccircle cx=%221483.5%22 cy=%22724.5%22 r=%224%22%2F%3E%3Ccircle cx=%221897.5%22 cy=%22724.5%22 r=%224%22%2F%3E%3Ccircle cx=%22241.5%22 cy=%22793.5%22 r=%224%22%2F%3E%3Ccircle cx=%22310.5%22 cy=%22793.5%22 r=%224%22%2F%3E%3Ccircle cx=%221207.5%22 cy=%22793.5%22 r=%224%22%2F%3E%3Ccircle cx=%221897.5%22 cy=%22793.5%22 r=%224%22%2F%3E%3Ccircle cx=%2234.5%22 cy=%22862.5%22 r=%224%22%2F%3E%3Ccircle cx=%22586.5%22 cy=%22862.5%22 r=%224%22%2F%3E%3Ccircle cx=%22862.5%22 cy=%22862.5%22 r=%224%22%2F%3E%3Ccircle cx=%221069.5%22 cy=%22862.5%22 r=%224%22%2F%3E%3Ccircle cx=%221138.5%22 cy=%22862.5%22 r=%224%22%2F%3E%3Ccircle cx=%221207.5%22 cy=%22931.5%22 r=%224%22%2F%3E%3Ccircle cx=%221345.5%22 cy=%22931.5%22 r=%224%22%2F%3E%3Ccircle cx=%221690.5%22 cy=%22931.5%22 r=%224%22%2F%3E%3Ccircle cx=%221897.5%22 cy=%22931.5%22 r=%224%22%2F%3E%3Ccircle cx=%22103.5%22 cy=%221000.5%22 r=%224%22%2F%3E%3Ccircle cx=%22310.5%22 cy=%221000.5%22 r=%224%22%2F%3E%3Ccircle cx=%221276.5%22 cy=%221000.5%22 r=%224%22%2F%3E%3Ccircle cx=%221414.5%22 cy=%221000.5%22 r=%224%22%2F%3E%3Ccircle cx=%221759.5%22 cy=%221000.5%22 r=%224%22%2F%3E%3Ccircle cx=%221207.5%22 cy=%221069.5%22 r=%224%22%2F%3E%3Ccircle cx=%22655.5%22 cy=%221138.5%22 r=%224%22%2F%3E%3Ccircle cx=%22862.5%22 cy=%221138.5%22 r=%224%22%2F%3E%3Ccircle cx=%22931.5%22 cy=%221138.5%22 r=%224%22%2F%3E%3Ccircle cx=%221414.5%22 cy=%221138.5%22 r=%224%22%2F%3E%3Ccircle cx=%22517.5%22 cy=%221207.5%22 r=%224%22%2F%3E%3Ccircle cx=%221897.5%22 cy=%221276.5%22 r=%224%22%2F%3E%3Ccircle cx=%221966.5%22 cy=%221276.5%22 r=%224%22%2F%3E%3Ccircle cx=%22655.5%22 cy=%221345.5%22 r=%224%22%2F%3E%3Ccircle cx=%221897.5%22 cy=%221345.5%22 r=%224%22%2F%3E%3Ccircle cx=%22172.5%22 cy=%221414.5%22 r=%224%22%2F%3E%3Ccircle cx=%221483.5%22 cy=%221414.5%22 r=%224%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%220%22 stop-color=%22%23fff%22%2F%3E%3Cstop offset=%221%22 stop-color=%22%23fff%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
+}
+
+/* Remove the blue border (focus state) when an accordion button is clicked */
+  .accordion-button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  svg {
+    width: 100%;
+    height: auto;
+}
+.uniform-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 300px; /* Sesuaikan tinggi minimal sesuai kebutuhan */
+  max-width: 400px; /* Atur lebar maksimum yang sama */
+  border-top: 5px solid #5a9bd4;
+  border-bottom: 5px solid #5a9bd4;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.uniform-card h3 {
+  font-size: 2rem;
+  color: #5a9bd4;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.uniform-card p, .uniform-card input, .uniform-card textarea, .uniform-card button {
+  font-size: 1.3rem;
+  color: #5a9bd4;
+}
+
+/* Button styling */
+.uniform-card button {
+  background-color: #5a9bd4;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.uniform-card .form-control {
+  border: 1px solid #5a9bd4;
+}
+
+
+/* Gradient tanpa @mixin */
+.sliderr::before,
+.sliderr::after {
+	/*background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);*/
+	content: "";
+	height: 100px;
+	position: absolute;
+	width: 200px;
+	z-index: 2;
+
+}
+
+.sliderr::after {
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
+}
+
+.sliderr::before {
+	left: 0;
+	top: 0;
+}
+
+/* Animasi */
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7)); }
+}
+
+/* Styling */
+.sliderr {
+	background-color:#5A9BD4;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	/*width: 960px;*/
+}
+
+.slide-track {
+	animation: scroll 40s linear infinite; /* Ganti $animationSpeed dengan 40s */
+	display: flex;
+	width: calc(250px * 14);
+}
+
+.slider {
+	height: 100px;
+	width: 250px;
+}
+img {
+    height: 100px;
+    width: 225px;
+}
+
+
+/* For smaller screens (mobile view) */
+@media screen and (max-width: 768px) {
+    .sliderr {
+        height: 80px; /* Reduced height */
+    }
+
+    .slide {
+        height: 80px;
+        width: 200px;
+    }
+
+    .slide-track {
+        width: calc(200px * 14); /* Adjust width according to smaller slide size */
+    }
+
+    img {
+        height: 80px;
+        width: 200px; /* Smaller images */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sliderr {
+        height: 60px; /* Further reduced height */
+    }
+
+    .slide {
+        height: 60px;
+        width: 150px;
+    }
+
+    .slide-track {
+        width: calc(150px * 14); /* Adjust width for mobile */
+    }
+
+    img {
+        height: 60px;
+        width: 150px; /* Even smaller images for mobile */
+    }
+}
+
+.footer {
+    background-color: #5A9BD4;
+    color: white;
+    padding: 40px 0;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap; /* Flex wrap untuk memudahkan responsive */
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-links ul, .footer-legal ul, .footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li, .footer-legal ul li, .footer-contact ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li:first-child, .footer-legal ul li:first-child, .footer-contact ul li:first-child {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-links a, .footer-legal a, .footer-contact a {
+  color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover, .footer-legal a:hover, .footer-contact a:hover {
+    color: #000;
+}
+
+.footer-contact i {
+    margin-right: 15px;
+}
+
+.copyright {
+    margin-top: 20px;
+    padding-top: 50px;
+    font-size: 1.5rem;
+    color: white;
+    border-top: 1px solid white;
+    text-align: center;
+}
+
+/* Responsive Tablet */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-links, .footer-legal, .footer-contact {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .footer-logo h2 {
+        font-size: 22px;
+    }
+
+    .footer-logo p {
+        font-size: 13px;
+    }
+
+    .footer-links ul, .footer-legal ul, .footer-contact ul {
+        display: inline-block;
+    }
+
+    .footer-links a, .footer-legal a, .footer-contact a {
+        font-size: 1.4rem;
+    }
+
+    .copyright {
+        font-size: 1.4rem;
+    }
+}
+
+/* Responsive Mobile */
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo h2 {
+        font-size: 20px;
+    }
+
+    .footer-logo p {
+        font-size: 12px;
+    }
+
+    .footer-links a, .footer-legal a, .footer-contact a {
+        font-size: 1.3rem;
+    }
+
+    .footer-links ul, .footer-legal ul, .footer-contact ul {
+        text-align: center;
+    }
+
+    .footer-contact i {
+        font-size: 1.8rem; /* Ukuran ikon lebih kecil */
+        margin-right: 10px;
+    }
+
+    .copyright {
+        font-size: 1.2rem;
+        padding-top: 30px;
+    }
+}
+
+
+
+

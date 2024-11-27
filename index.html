@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shop</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- Boxicons CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+   
+            
+    
+
+  </head>
+ <body>
+     <header class="bg-header">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll" id="navbar">
+        <div class="container justify-content-between align-items-center px-3 mb-4">
+            <!-- Logo di bagian kiri -->
+            <a class="navbar-logo" href="#">
+               
+                <img src="img/logoshop.png" alt="Logo" style="width: 60px; height: 60px;" />
+            </a>
+
+            <!-- Button untuk toggle navbar saat mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar items (menu) -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2 ">
+                        <a class="nav-link " aria-current="page" href="#home" style="font-size: 2rem;">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link " href="#about" style="font-size: 2rem;">About</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link " href="#product" style="font-size: 2rem;">Product</a>
+                    </li>
+                    <li class="nav-item dropdown" style="font-size: 2rem;">
+                      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Testimoni</a>
+                      <ul class="dropdown-menu" style="font-size: 1.5rem; background-color: #B3E5FC;">
+                        <li><a class="dropdown-item" href="#testimoni">Testimoni</a></li>
+                        <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#contact" style="font-size: 2rem;">Contact & Layanan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+   
+<main data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0" >
+  <section class="home">
+    <div class="main"  id="home">
+    <div>
+      <span>shop</span>
+      <h1> <strong class="strong">Shop</strong>sphere</h1>
+      <hr>
+      <p>Segalanya yang Anda butuhkan untuk meningkatkan kehidupan sehari-hari, dari rumah hingga kecantikan.</p>
+      <a href="#product">Buy Now</a>
+    </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide--one">
+          <div>
+            <h2>mascara</h2>
+            <p>Maskara adalah produk kecantikan yang digunakan untuk mempertegas dan memperpanjang bulu mata. </p>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--two">
+          <div>
+            <h2>perfumes</h2>
+            <p>
+              Parfum adalah campuran bahan kimia dan ekstrak alami yang digunakan untuk memberikan aroma yang menyegarkan atau memikat.
+            </p>
+          </div>
+        </div>
+  
+        <div class="swiper-slide swiper-slide--three">
+       
+          <div>
+            <h2>sofas</h2>
+            <p>
+              Sofa adalah furnitur yang dirancang untuk memberikan kenyamanan saat duduk atau beristirahat.
+            </p>
+          </div>
+        </div>
+  
+        <div class="swiper-slide swiper-slide--four">
+  
+          <div>
+            <h2>Apple</h2>
+            <p>
+              Apel adalah buah segar yang dikenal dengan rasa manis dan asamnya yang menyegarkan. 
+            </p>
+          </div>
+        </div>
+  
+        <div class="swiper-slide swiper-slide--five">
+  
+          <div>
+            <h2>Beef Steak</h2>
+            <p>
+              Beef steak adalah potongan daging sapi yang diiris tebal dan dipanggang atau digoreng.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>  
+  </div>
+</section>
+                        <!-- About Section -->
+                                        
+                                <div id="about" class="about-section" style="font-size: 36px;">
+                                <section class="py-5">
+                                    <div class="container">
+                                        <div class="row align-items-center py-5">
+                                            <!-- Kotak dan lingkaran di sebelah kiri -->
+                                            <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-duration="1200">
+                                                <div class="shape-container d-flex flex-column justify-content-start">
+                                                    <!-- Baris pertama -->
+                                                    <div class="d-flex mb-4">
+                                                        <!-- Lingkaran pertama (atas) -->
+                                                        <div class="square1" style="width: 200px; height: 200px; border-radius: 10px; background-size: cover; margin-right: 20px;"></div>
+                                                        <!-- Kotak pertama (atas) -->
+                                                        <div class="square2" style="width: 170px; height: 170px; border-radius: 10px; background-size: cover;"></div>
+                                                    </div>
+                                                    <!-- Baris kedua -->
+                                                    <div class="d-flex">
+                                                        <!-- Lingkaran kedua (bawah) -->
+                                                        <div class="square3" style="width: 170px; height: 170px; border-radius: 10px;  background-size: cover;  margin-right: 20px;"></div>
+                                                        <!-- Kotak kedua (bawah) -->
+                                                        <div class="square4" style="width: 200px; height: 200px; border-radius: 10px; background-size: cover;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- Teks di sebelah kanan -->
+                                            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200" style="padding-left: 2rem;">
+                                                <h2 class="text-center mb-6 fw-bold fs-1 fs-lg-4" style="font-size: 3rem;" data-aos="fade-down" data-aos-duration="1200">
+                                                    About <span style="color:white;">Shopsphere</span>
+                                                </h2>
+                            
+                                                <p class="lead text-center" style="font-size:1.7rem; margin-top:5rem; color:white;">
+                                                  Shopsphere adalah platform e-commerce yang dirancang untuk menyediakan pengalaman berbelanja online yang mudah dan menyenangkan bagi pengguna. Dengan berbagai kategori produk, seperti fashion, elektronik, kecantikan, makanan, dan banyak lagi.
+                                                </p>
+                                                <p class="lead text-center" style="font-size:1.7rem; color:white;">
+                                                  Shopsphere menawarkan katalog yang luas untuk memenuhi kebutuhan berbagai konsumen. 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                             
+                            <section id="product" class="product-section">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5a9bd4" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,149.3C384,171,480,245,576,250.7C672,256,768,192,864,181.3C960,171,1056,213,1152,218.7C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                                  <div class="container">
+                                  <h4 class="text-center fw-bold mb-6 fs-1 fs-lg-4 py-5" style="font-size: 3rem; color: #5A9BD4;" data-aos="fade-down" data-aos-duration="1200">
+                                    ✨ Discover Our Collection ✨
+                                  </h4>
+                              
+                                  <!-- Tabs navigation -->
+                                  <ul class="nav nav-pills nav-tabs justify-content-center" id="productTabs" role="tablist" style="border-bottom: none;">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active" id="beauty-tab" data-bs-toggle="tab" data-bs-target="#beauty" type="button" role="tab" aria-controls="beauty" aria-selected="true">
+                                        <div class="icon-text">
+                                          <i class="bx bx-face"></i>
+                                          <span>Beauty</span>
+                                        </div>
+                                      </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="fragrances-tab" data-bs-toggle="tab" data-bs-target="#fragrances" type="button" role="tab" aria-controls="fragrances" aria-selected="false">
+                                        <div class="icon-text">
+                                          <i class="bx bx-wind"></i>
+                                          <span>Fragrances</span>
+                                        </div>
+                                      </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="furniture-tab" data-bs-toggle="tab" data-bs-target="#furniture" type="button" role="tab" aria-controls="furniture" aria-selected="false">
+                                        <div class="icon-text">
+                                          <i class="bx bx-chair"></i>
+                                          <span>Furniture</span>
+                                        </div>
+                                      </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="groceries-tab" data-bs-toggle="tab" data-bs-target="#groceries" type="button" role="tab" aria-controls="groceries" aria-selected="false">
+                                        <div class="icon-text">
+                                          <i class="bx bx-basket"></i>
+                                          <span>Groceries</span>
+                                        </div>
+                                      </button>
+                                    </li>
+                                  </ul>
+                               
+
+                                <!-- Tab Content -->
+                                <div class="tab-content mt-4">
+                                  <div class="tab-pane fade show active" id="beauty" role="tabpanel" aria-labelledby="beauty-tab">
+                                    <div id="beauty-products" class="row g-4"></div>
+                                  </div>
+                                  <div class="tab-pane fade" id="fragrances" role="tabpanel" aria-labelledby="fragrances-tab">
+                                    <div id="fragrances-products" class="row g-4"></div>
+                                  </div>
+                                  <div class="tab-pane fade" id="furniture" role="tabpanel" aria-labelledby="furniture-tab">
+                                    <div id="furniture-products" class="row g-4"></div>
+                                  </div>
+                                  <div class="tab-pane fade" id="groceries" role="tabpanel" aria-labelledby="groceries-tab">
+                                    <div id="groceries-products" class="row g-4"></div>
+                                  </div>
+                                </div>
+                              
+                            </div>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5a9bd4" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                            </section>
+                            
+                            <!-- Modals Container -->
+                            <div id="productModalsContainer"></div>
+                           
+                          
+          <!-- Testimoni Section -->
+
+              <section id="testimoni" class="testimoni" style="text-align: center;">
+                <div class="cardd">
+                  <h2 class="section-title fw-bold" data-aos="flip-left">What do they say?</h2>
+              
+                  <!-- Radio inputs for carousel control -->
+                  <input type="radio" name="position" id="pos1" checked />
+                  <input type="radio" name="position" id="pos2" />
+                  <input type="radio" name="position" id="pos3" />
+                  <input type="radio" name="position" id="pos4" />
+                  <input type="radio" name="position" id="pos5" />
+              
+                  <!-- Arrow buttons -->
+                  <div class="carousel-arrows">
+                    <button id="prev" class="arrow-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next" class="arrow-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              
+                  <!-- Carousel content -->
+                  <div id="carousel">
+                    <!-- Testimonial Items (e.g., item 1, item 2, etc.) -->
+                    <div class="item">
+                      <img src="img/model4 - Copy.png" alt="Customer 1" class="customer-photo">
+                      <p class="testimonial-text">"Saya sangat puas dengan koleksi make-up di sini! Produk yang saya beli berkualitas tinggi dan warna yang saya pilih sangat sesuai."</p>
+                      <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                      <p class="customer-name">- Sarah W.</p>
+                    </div>
+                      <!-- Testimonial Item 2 -->
+                   <div class="item">
+                    <img src="img/model5 - Copy.png" alt="Customer 2" class="customer-photo">
+                    <!-- <h3 class="testimonial-title">Great Service!</h3> -->
+                    <p class="testimonial-text">Pengiriman cepat dan kemasannya rapi. Sangat merekomendasikan untuk semua orang!."</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="customer-name">-anna.s.</p>
+                </div>
+    
+                <div class="item">
+                  <img src="img/po.jpg" alt="Customer 2" class="customer-photo">
+                  <!-- <h3 class="testimonial-title">Great Service!</h3> -->
+                  <p class="testimonial-text">"Saya menemukan parfum favorit baru saya di toko ini! Aromanya tahan lama dan harga sangat bersaing. Pengalaman belanja yang luar biasa!"</p>
+                  <div class="rating">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+                  <p class="customer-name">- Put.</p>
+              </div>
+              <div class="item">
+                <img src="img/hq2.jpg" alt="Customer 2" class="customer-photo">
+                <!-- <h3 class="testimonial-title">Great Service!</h3> -->
+                <p class="testimonial-text">"Belanja di sini sangat menyenangkan! Dari barang-barang hingga make-up, semuanya berkualitas tinggi. Saya pasti akan kembali untuk mencoba produk lainnya."</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="customer-name">- Kiki.</p>
+            </div>
+            <div class="item">
+              <img src="img/pl.jfif" alt="Customer 2" class="customer-photo">
+              <!-- <h3 class="testimonial-title">Great Service!</h3> -->
+              <p class="testimonial-text">"Buah-buahan segar, make-up yang luar biasa, dan parfum yang menyegarkan. Pengiriman juga sangat cepat, senang banget deh!"</p>
+              <div class="rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="customer-name">- Ijah.</p>
+          </div>
+              
+                  </div>
+                </div>
+              </section>
+            
+              
+              
+              
+              
+              <div  class="faq" id="faq">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5a9bd4" fill-opacity="3" d="M0,192L48,176C96,160,192,128,288,149.3C384,171,480,245,576,250.7C672,256,768,192,864,181.3C960,171,1056,213,1152,218.7C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                
+                <section >
+                  <h4 class="text-center mb-6 fs-1 fs-lg-4 py-5 " style="font-size: 3rem; color:#5A9BD4; font-weight: bold;" data-aos="fade-down" data-aos-duration="1200">
+                      Frequently Asked Questions
+                  </h4>
+                  <div class="row align-items-center justify-content-center">
+                       <!--Accordion -->
+                      <div class="col-lg-8">
+                          <div class="accordion" id="accordionPanelsStayOpenExample">
+                              <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style=" background-color: #5A9BD4 ;">
+                                          <p style="font-size:1.5rem; color:white;">Apa yang harus dilakukan jika produk yang diterima rusak atau cacat?</p>
+                                      </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                      <div class="accordion-body"  style=" background-color: white ;">
+                                          <p style="font-size:1.5rem; text-align:center; font-weight:normal; color:#5A9BD4;">Jika produk yang Anda terima rusak atau cacat, segera hubungi kami melalui halaman kontak atau email support@shopsphere.com dalam waktu 48 jam setelah penerimaan barang. </p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style=" background-color:#5A9BD4;">
+                                          <p style="font-size:1.5rem; color: white;">Apakah Shopsphere menyediakan layanan internasional?</p>
+                                      </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                      <div class="accordion-body"  style=" background-color:  white;">
+                                          <p style="font-size:1.5rem; text-align:center; font-weight:normal; color:#5A9BD4;">Saat ini, kami hanya melayani pengiriman dalam negeri. Kami sedang bekerja untuk memperluas layanan internasional di masa depan, jadi pastikan untuk memeriksa pembaruan dari kami.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style=" background-color:#5A9BD4;">
+                                          <p style="font-size:1.5rem; color:white;">Apakah saya bisa mengubah atau membatalkan pesanan saya setelah melakukan pembayaran?</p>
+                                      </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                      <div class="accordion-body"  style=" background-color: white;">
+                                          <p style="font-size:1.5rem; text-align:center; font-weight:normal; color:#5A9BD4;"> Pembatalan atau perubahan pesanan hanya bisa dilakukan sebelum pesanan diproses. Segera hubungi kami jika ada perubahan, dan kami akan berusaha membantu Anda sebaik mungkin.</p>
+                                      </div>
+                                  </div>
+                              </div>
+  
+                          </div>
+  
+                      </div>
+  
+                  </div>
+              </section>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5a9bd4" fill-opacity="3" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            </div>
+
+            
+            <section class="contact-section" id="contact" style="padding: 40px 20px; background-color: #5a9bd4;">
+              <!-- Section Title -->
+              <h2 class="text-center mb-6 fw-bold" style="font-size: 2.5rem; color: #e7e0d8;" data-aos="fade-down" data-aos-duration="1200">
+                  Contact Us
+              </h2>
+          
+              <!-- Content (Image and Contact Form) -->
+              <div class="contact-content row justify-content-center align-items-start" style="gap: 20px;">
+                  <!-- Contact Form Section -->
+                  <div class="contact-form col-12 col-lg-4 uniform-card" data-aos="fade-left" style="margin-top: 20px; padding-top: 30px;">
+                      <form action="#" method="POST">
+                          <div class="mb-3">
+                              <input type="text" id="name" name="name" placeholder="Your Name" required class="form-control">
+                          </div>
+                          <div class="mb-3">
+                              <input type="email" id="email" name="email" placeholder="Your Email" required class="form-control">
+                          </div>
+                          <div class="mb-3">
+                              <textarea id="message" name="message" rows="4" placeholder="Your Message" required class="form-control"></textarea>
+                          </div>
+                          <div style="padding-top: 30px;">
+                          <button type="submit" class="btn btn-primary w-100" style="color: white; padding: 10px;">Send Message</button>
+                        </div>
+                      </form>
+                  </div>
+          
+                  <!-- Social Box -->
+                  <div class="social-box col-12 col-lg-4 text-center uniform-card" style="margin-top: 20px;">
+                      <h3>Hubungi Kami</h3>
+                      <p style="padding-top: 20px;">Ikuti kami di media sosial untuk mendapatkan update terbaru!</p>
+                      <div class="d-flex justify-content-center gap-5" style="padding-top: 30px;">
+                          <a href="#" class="social-icon" style="font-size: 2.8rem; color: #5a9bd4;"><i class="fab fa-whatsapp"></i></a>
+                          <a href="#" class="social-icon" style="font-size: 2.8rem; color: #5a9bd4;"><i class="fab fa-instagram"></i></a>
+                          <a href="#" class="social-icon" style="font-size: 2.8rem; color: #5a9bd4;"><i class="fab fa-facebook"></i></a>
+                      </div>
+                      <div class="d-flex justify-content-center gap-5 mt-3">
+                          <a href="#" class="social-icon" style="font-size: 2.8rem; color: #5a9bd4;"><i class="fab fa-twitter"></i></a>
+                          <a href="#" class="social-icon" style="font-size: 2.8rem; color: #5a9bd4;"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- Services Box -->
+              <div class="container-fluid">
+                <div class="service-box mx-auto" data-aos="fade-up" style="background-color: #f9f9f9; border-radius: 10px; padding: 30px; border-bottom: 5px solid #5a9bd4; border-top: 5px solid #5a9bd4; margin-top: 20px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); width: 100%;">
+                    <h3 class="text-center" style="font-size: 1.8rem; color: #5a9bd4; font-weight: bold; margin-bottom: 20px; margin-top: 20px;">Layanan Kami</h3>
+                    <div class="row text-center justify-content-center gap-3">
+                        <div class="col-6 col-md-3">
+                            <i class="fas fa-shopping-cart" style="font-size: 2.5rem; color: #5a9bd4; margin-bottom: 10px;"></i>
+                            <p style="font-size: 1.2rem; color: #5a9bd4;">Bantuan Pembelian</p>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <i class="fas fa-undo-alt" style="font-size: 2.5rem; color: #5a9bd4; margin-bottom: 10px;"></i>
+                            <p style="font-size: 1.2rem; color: #5a9bd4;">Pengembalian Produk</p>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <i class="fas fa-truck" style="font-size: 2.5rem; color: #5a9bd4; margin-bottom: 10px;"></i>
+                            <p style="font-size: 1.2rem; color: #5a9bd4;">Informasi Pengiriman</p>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <i class="fas fa-gift" style="font-size: 2.5rem; color: #5a9bd4; margin-bottom: 10px;"></i>
+                            <p style="font-size: 1.2rem; color: #5a9bd4;">Promo dan Diskon</p>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <i class="fas fa-headset" style="font-size: 2.5rem; color: #5a9bd4; margin-bottom: 10px;"></i>
+                            <p style="font-size: 1.2rem; color: #5a9bd4;">Layanan Pelanggan 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+          </section>
+          
+                </main>
+
+              <!--slide bawah-->
+             <div class="sliderr">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="img/terima kasih.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="img/telah berkunjung.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="img/di wensite kami.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="img/terima kasih.png" height="100" width="250" alt="" />
+                      </div>
+                      <div class="slide">
+                          <img src="img/telah berkunjung.png" height="100" width="250" alt="" />
+                      </div>
+                      <div class="slide">
+                          <img src="img/di wensite kami.png" height="100" width="250" alt="" />
+                      </div>
+                      <div class="slide">
+                        <img src="img/terima kasih.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/telah berkunjung.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/di wensite kami.png" height="100" width="250" alt="" />
+                    </div>
+                    </div>
+                </div>
+         <!--SECTION FOOTER-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-logo">
+                            <h2>Shopsphere</h2>
+                            <p>Tersedia Untuk Siapa Saja !</p>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li>Pages</li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Product</a></li>
+                                <li><a href="#">Layanan</a></li>
+                                <li><a href="#">Testimoni</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <!--<li><a href="#">Testimoni</a></li>-->
+                            </ul>
+                        </div>
+                        <div class="footer-legal">
+                            <ul>
+                                <li>Legal Information</li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Terms & conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-contact">
+                            <ul>
+                                <li>Contact us</li>
+                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-pinterest"></i>
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="back-to-top"><i class="icon-arrow-up"></i></a>
+                </div>
+                <p class="copyright">&copy; 2024  Shopsphere . All Rights Reserved.</p>
+            </footer>
+
+
+       <script src="js.js"></script>
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="https://kit.fontawesome.com/ddff76687b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+  AOS.init();
+</script>
+  
+  </body>
+</html>
